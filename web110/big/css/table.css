@@ -1,0 +1,25 @@
+table {
+  width: 80%;
+  margin: 0 auto;
+  border: solid 3px #e9ecef;
+  border-collapse: collapse;
+}
+
+table {
+  background-color: #f8f9fa;
+}
+
+caption {
+  margin: 3em auto;
+  margin-bottom: 1em;
+}
+
+th {
+  border: solid 3px #e9ecef;
+  padding: 1em;
+}
+
+td {
+  border: solid 3px #e9ecef;
+  padding: 1em;
+}

@@ -20,6 +20,8 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="./src/css/lightbox.css" />
+    <script defer src="./src/js/lightbox-plus-jquery.js"></script>
   </head>
   <body>
     <main class="wrapper">
@@ -81,7 +83,7 @@
               </ul>
             </li>
             <li>
-              <a href="contact.php"
+              <a href="./contact.php"
                 ><i class="fa fa-fw fa-server"></i> Contact</a
               >
             </li>
@@ -89,15 +91,54 @@
         </nav>
       </header>
 
-      <section class="fullwidth">
-        <h2 class="subheader ">Contact Huy</h2>
-        <h3>This is my college's contact info</h3>
-        <address>
-          1701 Broadway <br />
-          Seattle, WA 98122
-        </address>
-        <a href="tel:012069343800">206.934.3800</a>
+      <!-- START LEFT COLUMN -->
+      <section>
+        <h2>Light Box 2 - Image Gallery</h2>
+        <div class="gallery">
+          <figure>
+            <a
+              href="./images/beach-large.png"
+              data-lightbox="explore"
+              data-title="A beautiful morning on the beach"
+            >
+              <img src="images/beach-small.png" alt="beach" />
+            </a>
+            <figcaption>Beach</figcaption>
+          </figure>
+          <figure>
+            <a
+              href="./images/mountain-large.png"
+              data-lightbox="explore"
+              data-title="Fresh air in the mountain"
+            >
+              <img src="images/mountain-small.png" alt="mountain" />
+            </a>
+            <figcaption>Mountain</figcaption>
+          </figure>
+          <figure>
+            <a
+              href="images/road-large.png"
+              data-lightbox="explore"
+              data-title="An interesting Adventure"
+            >
+              <img src="images/road-small.png" alt="road" />
+            </a>
+            <figcaption>Road</figcaption>
+          </figure>
+        </div>
       </section>
+      <!-- END LEFT COLUMN -->
+
+      <!-- START RIGHT COLUMN -->
+      <aside>
+        <h3>Additional Slideshow Image Gallery Resources</h3>
+        <ul>
+          <li><a href="https://unsplash.com/">Unsplash</a></li>
+          <li><a href="https://www.pexels.com/">Pexels</a></li>
+          <li><a href="https://pixabay.com/">Pixabay</a></li>
+        </ul>
+      </aside>
+      <!-- END RIGHT COLUMN -->
 
       <footer>
         <p>
