@@ -1,0 +1,274 @@
+@import url("figure.css");
+
+.services {
+  height: 70vh;
+  width: 100%;
+  padding: 0 6rem;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (min-width: 769px) {
+  .services {
+    margin-top: 2rem;
+    min-height: 65rem;
+  }
+}
+
+.services ul {
+  list-style: none;
+}
+
+/*menu*/
+.menu {
+  width: 100%;
+  height: 15%;
+}
+
+.list-menu {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.list-menu li {
+  font-size: clamp(2.4rem, 2vw, 3.2rem);
+  font-weight: 500;
+  color: var(--black);
+  transition: left 0.25s cubic-bezier(0.85, 0.09, 0.37, 0.56);
+}
+
+.list-menu li div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-menu li .menu-btn {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .list-menu li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    height: 100%;
+  }
+
+  .list-menu {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 2rem;
+  }
+
+  .list-menu li {
+    flex-direction: 23% 0 0;
+    width: 45%;
+    min-width: 15rem;
+    height: 23%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("");
+    color: var(--white);
+  }
+
+  .list-menu li div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(43, 44, 48, 0.2);
+    overflow: hidden;
+  }
+
+  .list-menu li .menu-btn {
+    position: absolute;
+    display: inline-block;
+    border: none;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .services {
+    height: auto;
+    padding: 0 2rem;
+  }
+
+  .list-menu li {
+    width: 100%;
+    height: 15rem;
+  }
+}
+
+/*end of menu*/
+
+/*desktop menu buttons*/
+.slide-btn {
+  width: 10rem;
+  height: 10rem;
+  padding: 3.5rem 1.5rem 3.5rem 5.5rem;
+  position: absolute;
+  top: 50%;
+  opacity: 0.5;
+  border-radius: 50%;
+  border: 0.2rem solid var(--gray);
+  background: var(--white);
+}
+
+.slide-btn.prev {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.slide-btn.next {
+  right: 0;
+  transform: translate(50%, -50%) rotateZ(180deg);
+}
+
+@media screen and (max-width: 768px) {
+  .slide-btn {
+    display: none;
+  }
+}
+
+/*end of desktop menu button*/
+
+/*services slides*/
+.services-container {
+  height: 85%;
+  width: 100%;
+  background-color: var(--gray);
+  position: relative;
+}
+
+.services-container ul {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 2rem;
+  font-size: clamp(1.4rem, 1.5vw, 2.4rem);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  transition: left 0.6s cubic-bezier(0.85, 0.09, 0.37, 0.56);
+}
+
+@media screen and (min-width: 769px) {
+  .services-container,
+  .services-container ul {
+    overflow: hidden;
+  }
+}
+
+.services-container ul li {
+  flex: 12% 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 28%;
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.05, 0.67, 0.2, 0.95);
+}
+
+.services-container ul.show li {
+  opacity: 1;
+}
+
+.services-container ul li.sub-menu {
+  border-bottom: 0.2rem solid var(--black);
+  font-size: 1.2em;
+  font-weight: 500;
+  padding-bottom: 0.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .services-container {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0.5s cubic-bezier(0.05, 0.67, 0.2, 0.95);
+    background: var(--white);
+    overflow-x: hidden;
+  }
+
+  .services-container.show {
+    left: 0%;
+  }
+
+  .services-container ul {
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 6rem;
+    opacity: 0;
+    overflow-y: visible;
+  }
+
+  .services-container ul.show {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .services-container ul {
+    flex-wrap: nowrap;
+  }
+
+  .services-container ul li {
+    min-width: 25rem;
+  }
+}
+
+/*end of services slides*/
+
+/*services slides close button*/
+.close-service-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .services-container.show .close-service-menu {
+    display: block;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%) rotateZ(180deg);
+    width: 6rem;
+    height: 6rem;
+    padding: 2rem 0.5rem 2rem 3.5rem;
+    background: none;
+    border: 0.2rem solid var(--gray);
+    border-radius: 50%;
+  }
+}

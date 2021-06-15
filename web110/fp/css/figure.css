@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --black: #2b2c30;
+  --blue: #616d89;
+  --white: #ffffff;
+  --light-gray: #f5f7f9;
+  --gray: #eef0f4;
+
+  --mobile-padding: 2.5rem;
+}

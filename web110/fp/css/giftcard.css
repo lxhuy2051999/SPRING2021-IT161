@@ -1,0 +1,42 @@
+@import url("figure.css");
+#gift-card {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 769px) {
+  #gift-card {
+    min-height: 60rem;
+  }
+}
+
+#gift-card .cards {
+  width: 25%;
+  min-width: 28rem;
+  height: auto;
+}
+
+.cards img {
+  width: 100%;
+}
+
+#gift-card p {
+  width: 45%;
+  min-width: 28rem;
+  text-align: center;
+  line-height: 1.2em;
+  font-size: clamp(1.4rem, 1.4vw, 2rem);
+  margin: 2em auto;
+}
+
+#gift-card h2 {
+  font-weight: 500;
+  width: 45%;
+  min-width: 25rem;
+  font-size: clamp(1.8rem, 1.8vw, 3.2rem);
+  text-align: center;
+}

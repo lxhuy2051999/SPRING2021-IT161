@@ -36,13 +36,13 @@
             </li>
             <li>
               <a href="index.html"
-                ><i class="fa fa-fw fa-home"></i>BIG Website</a
+                ><i class="fa fa-fw fa-home"></i> BIG Website</a
               >
             </li>
 
             <li>
               <a href="gallery.html"
-                ><i class="fa fa-fw fa-camera-retro"></i>Lightbox II Gallery</a
+                ><i class="fa fa-fw fa-camera-retro"></i> Lightbox II Gallery</a
               >
             </li>
 
@@ -68,7 +68,7 @@
               <a href="#"> Google</a>
               <ul>
                 <li>
-                  <a href="seo.html"><i class="fa fa-fw fa-desktop"></i> SEO</a>
+                  <a href="seo.html"><i class="fa fa-fw fa-desktop"></i> Form</a>
                 </li>
                 <li>
                   <a href="calendar.html"
