@@ -3,9 +3,10 @@
 .services {
   height: 70vh;
   width: 100%;
-  padding: 0 6rem;
+  padding: 2rem 6rem;
   overflow: hidden;
   position: relative;
+  background-color: var(--gray);
 }
 
 @media screen and (min-width: 769px) {
@@ -88,8 +89,35 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("");
     color: var(--white);
+  }
+
+  .list-menu li:nth-child(1) {
+    background-image: url("../images/basicMobile.png");
+  }
+
+  .list-menu li:nth-child(2) {
+    background-image: url("../images/acrylicMobile.png");
+  }
+
+  .list-menu li:nth-child(3) {
+    background-image: url("../images/shellacMobile.png");
+  }
+
+  .list-menu li:nth-child(4) {
+    background-image: url("../images/dippingMobile.png");
+  }
+
+  .list-menu li:nth-child(5) {
+    background-image: url("../images/deluxMobile.png");
+  }
+
+  .list-menu li:nth-child(6) {
+    background-image: url("../images/kidMobile.png");
+  }
+
+  .list-menu li:nth-child(7) {
+    background-image: url("../images/waxingMobile.png");
   }
 
   .list-menu li div {
@@ -97,7 +125,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: rgba(43, 44, 48, 0.2);
+    background-color: rgba(43, 44, 48, 0.5);
     overflow: hidden;
   }
 
@@ -110,6 +138,7 @@
     height: 100%;
     top: 0;
     left: 0;
+    background-color: rgba(43, 44, 48, 0.5);
   }
 }
 

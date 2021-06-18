@@ -34,8 +34,8 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#gift-card">Gift Card</a></li>
-            <li><a href="">Appointment</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#appointment">Appointment</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <button class="mobile-menu-close">
@@ -53,9 +53,9 @@
         <section class="hero-2">
           <div class="slider">
             <div class="inner">
-              <div class="slide slide-3"><h1>slide-3</h1></div>
-              <div class="slide slide-1"><h1>slide-1</h1></div>
-              <div class="slide slide-2"><h1>slide-2</h1></div>
+              <div class="slide slide-3"></div>
+              <div class="slide slide-1"></div>
+              <div class="slide slide-2"></div>
             </div>
           </div>
           <button class="previous">
@@ -70,8 +70,12 @@
           <address data-info="address" id="info-adress" class="information">
             1701 Broadway, Seattle, WA 98122, Seattle, WA
           </address>
-          <em data-info="number" id="info-number" class="information"
-            >xxx xxx xxxx</em
+          <a
+            data-info="number"
+            id="info-number"
+            class="information"
+            href="tel:+1 &lpar;xxx&rpar; xxx-xxxx"
+            >xxx xxx xxxx</a
           >
 
           <div class="notification">
@@ -417,15 +421,38 @@
           </form>
         </section>
 
-        <section class="contact" id="contact"></section>
+        <section class="contact" id="contact">
+          <div class="business-info-container">
+            <h2>Address:</h2>
+            <address>623 1/2 Queen Anne Ave N Seattle, WA 98109</address>
+            <h2>Phone Number</h2>
+            <a href="tel:+1 &lpar;xxx&rpar; xxx-xxxx">xxx xxx xxxx</a>
+            <h2>Business hours</h2>
+            <p>
+              Monday – Friday: 10:00am – 7:30pm <br />
+              Saturday: 10am – 7pm <br />
+              Sunday: 11am -6pm
+            </p>
+          </div>
+          <div class="embed-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7777.49389883667!2d-122.36190869059456!3d47.62196160134949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901543cb68a951%3A0xefa696dc0ea5eb72!2sQueen%20Anne%20Nails%20%26%20Spa!5e0!3m2!1sen!2sus!4v1623741409860!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </section>
       </main>
 
       <!--Footer-->
       <footer>
         <p>
           <small
-            >&copy; 2021 by <a href="contact.php">Huy Xuon Lieu</a>, All Rights
-            Reserved ~
+            >&copy; 2021 by <a href="../big/contact.php">Huy Xuon Lieu</a>, All
+            Rights Reserved ~
             <a
               href="https://validator.w3.org/nu/?doc=https://web-students.net/site48/it161/index.html"
               target="_blank"

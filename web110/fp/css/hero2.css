@@ -26,6 +26,21 @@
   align-items: center;
   background-color: var(--blue);
   transition: left 0.5s ease-in-out;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-2 .slider .slide-1 {
+  background-image: url("../images/main.png");
+}
+
+.hero-2 .slider .slide-2 {
+  background-image: url("../images/main-2.png");
+}
+
+.hero-2 .slider .slide-3 {
+  background-image: url("../images/main-3.png");
 }
 
 .hero-2 .slider .slide h1 {

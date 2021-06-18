@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   padding: 6rem;
-  background-color: var(--blue);
+  background-color: var(--gray);
 }
 
 #appointment form {
@@ -19,6 +19,7 @@
   align-items: center;
   padding: 2rem;
   border-radius: 1rem;
+  backdrop-filter: blur(2rem);
 }
 
 #appointment form > *:not(button) {
